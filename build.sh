@@ -1,6 +1,5 @@
 #!/bin/sh
-react-scripts build && npx eslint . --fix && npx stylelint "**/*.{css,scss}" --fix
-cp -rv ./build/* ./docs
+npx eslint . --fix && npx stylelint "**/*.{css,scss}" --fix
 git add *
 read -p 'Commit Message: ' commitMessage
 git commit -m "$commitMessage"

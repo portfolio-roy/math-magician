@@ -1,5 +1,6 @@
 {
   "name": "math-magician",
+  "homepage": "https://portfolio.utsargo.tech/math-magician",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,7 @@
   },
   "scripts": {
     "start": "sh ./start.sh",
-    "build": "sh ./build.sh",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
