@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello world</h1>
-        <h2>This is Utsargo Roy, Micronaut at microverse</h2>
+        <h2>This is Utsargo Roy, Micronaut at Microverse</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
