@@ -1,5 +1,6 @@
 #!/bin/sh
 npm run build
+git rm -r docs/*
 cp -rv build/* docs/
 for fl in docs/static/js/*.js; do  
      sed -i '1s;^;/* eslint-disable */\n;' $fl
