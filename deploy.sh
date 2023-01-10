@@ -1,5 +1,5 @@
 #!/bin/sh
-git rm -r docs/*
+git rm -r docs/
 mkdir docs
 npm run build
 cp -rv build/* docs/
