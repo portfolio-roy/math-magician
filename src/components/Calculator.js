@@ -1,37 +1,51 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  clickHandle = (e) => {
+    const clickedBtn = e.target.innerText;
+    const Result = calculate(this.state, clickedBtn);
+    this.setState(Result);
   }
 
   render() {
+    const { total, operation, next } = this.state;
     return (
       <div className="calculator-container">
-        <form className="display" id="display" name="display">
-          <input className="display-input" id="display-input" name="display-input" type="text" value={0} />
-        </form>
+        <div className="display" id="display">
+          {total}
+          {operation}
+          {next}
+        </div>
         <div className="grid-container" id="button-grid">
-          <div className="grid-button operator">AC</div>
-          <div className="grid-button operator">+/-</div>
-          <div className="grid-button operator">%</div>
-          <div className="grid-button operator column-4">÷</div>
-          <div className="grid-button number">7</div>
-          <div className="grid-button number">8</div>
-          <div className="grid-button number">9</div>
-          <div className="grid-button operator column-4">x</div>
-          <div className="grid-button number">4</div>
-          <div className="grid-button number">5</div>
-          <div className="grid-button number">6</div>
-          <div className="grid-button operator column-4">-</div>
-          <div className="grid-button number">1</div>
-          <div className="grid-button number">2</div>
-          <div className="grid-button number">3</div>
-          <div className="grid-button operator column-4">+</div>
-          <div className="grid-button number" id="zero">0</div>
-          <div className="grid-button number">.</div>
-          <div className="grid-button operator column-4">=</div>
+          <button type="button" className="grid-button operator" onClick={this.clickHandle}>AC</button>
+          <button type="button" className="grid-button operator" onClick={this.clickHandle}>+/-</button>
+          <button type="button" className="grid-button operator" onClick={this.clickHandle}>%</button>
+          <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>÷</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>7</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>8</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>9</button>
+          <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>x</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>4</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>5</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>6</button>
+          <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>-</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>1</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>2</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>3</button>
+          <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>+</button>
+          <button type="button" className="grid-button number" id="zero" onClick={this.clickHandle}>0</button>
+          <button type="button" className="grid-button number" onClick={this.clickHandle}>.</button>
+          <button type="button" className="grid-button operator" onClick={this.clickHandle}>=</button>
         </div>
       </div>
     );
