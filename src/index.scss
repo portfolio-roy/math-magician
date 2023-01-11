@@ -46,7 +46,7 @@ code {
   align-items: stretch;
 }
 
-.display-input {
+.display {
   width: 100%;
   background-color: gray;
   outline: none;
@@ -56,6 +56,9 @@ code {
   font-size: 32px;
   text-align: right;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #button-grid {
