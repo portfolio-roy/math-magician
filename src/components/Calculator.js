@@ -10,7 +10,7 @@ class Calculator extends React.Component {
     return (
       <div className="calculator-container">
         <form className="display" id="display" name="display">
-          <input className="display-input" id="display-input" name="display-input" type="text" />
+          <input className="display-input" id="display-input" name="display-input" type="text" value={0} />
         </form>
         <div className="grid-container" id="button-grid">
           <div className="grid-button operator">AC</div>
