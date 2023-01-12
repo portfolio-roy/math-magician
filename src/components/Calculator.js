@@ -45,7 +45,7 @@ class Calculator extends React.Component {
           <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>+</button>
           <button type="button" className="grid-button number" id="zero" onClick={this.clickHandle}>0</button>
           <button type="button" className="grid-button number" onClick={this.clickHandle}>.</button>
-          <button type="button" className="grid-button operator" onClick={this.clickHandle}>=</button>
+          <button type="button" className="grid-button operator column-4" onClick={this.clickHandle}>=</button>
         </div>
       </div>
     );
