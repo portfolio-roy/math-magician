@@ -63,7 +63,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li>Github</li>
+    <li>Render</li>
   </ul>
 </details>
 
@@ -85,7 +85,7 @@
 
 > Coming soon...
 
-- <a href="http://portfolio.utsargo.tech/math-magician" target="_blank">Live Demo Link</a>
+- <a href="http://math-magician.utsargo.tech/" target="_blank">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
