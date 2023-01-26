@@ -104,10 +104,11 @@ code {
 }
 
 .navigation {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   top: 16px;
   position: absolute;
 
