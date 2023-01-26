@@ -12,7 +12,6 @@ const App = () => (
         <Link to="/calculator">Calculator</Link>
         <Link to="/quote">Quote</Link>
       </ul>
-      <hr />
     </nav>
 
     <Routes>
